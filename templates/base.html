@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+    <head>
+        {% if title %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>Feedback Form</title>
+        {% endif %}
+        <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='/main.css') }}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+    </body>
